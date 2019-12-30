@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Tailwind 2 + Emotion / Styled Components`,
-    description: `A (reasonably) unopinionated Gatsby starter, including; Tailwind 2 and Emotion`,
+    title: `Chrish Dunne`,
+    description: `Designer and developer.`,
     author: `@chrish-d`,
   },
   plugins: [
