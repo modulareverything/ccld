@@ -69,7 +69,11 @@ const Header = props => {
               <Link to="/spotify-2019">Spotify 2019</Link>
             </li>
             <li>
-              <a href="https://twitter.com/__ccld" target="_blank">
+              <a
+                href="https://twitter.com/__ccld"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 Twitter
               </a>
             </li>
