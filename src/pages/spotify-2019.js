@@ -34,7 +34,7 @@ export default ({ data }) => {
    * Create our individual records using our graphql data
    */
   const Record = meta => (
-    /** First let's create the record itself and give it a bit of 3D */
+    /** First let's create the record itself and give it a bit of 3D-ness */
     <div
       css={css`
         transform: perspective(0) rotateY(0);
@@ -78,7 +78,7 @@ export default ({ data }) => {
             left: -11px;
             width: 15px;
             height: 100%;
-            background: ${meta.color};
+            background: #1db954;
             transform: perspective(2170px) rotateY(-63deg);
             z-index: -1;
             transition: 50ms ease-in-out opacity;
@@ -143,7 +143,6 @@ export default ({ data }) => {
                 key={index}
                 coverArt={node.image.localFile.childImageSharp.fluid}
                 playlistName={node.name}
-                color={node.image.localFile.colors.muted}
               />
             ))}
           </Crate>
@@ -181,14 +180,12 @@ export const query = graphql`
                   ...GatsbyImageSharpFluid_withWebp
                 }
               }
-              colors {
-                muted
-              }
             }
           }
         }
       }
     }
+
     file(name: { regex: "/spotify_logo/" }) {
       childImageSharp {
         fluid(maxWidth: 300) {

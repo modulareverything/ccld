@@ -14,7 +14,6 @@ module.exports = {
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-resolve-src`,
-    `gatsby-plugin-extract-image-colors`,
     {
       resolve: `gatsby-source-filesystem`,
       options: { path: `./static/images/` },

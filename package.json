@@ -19,7 +19,6 @@
     "gatsby": "^2.18.12",
     "gatsby-image": "^2.2.37",
     "gatsby-plugin-emotion": "^4.1.18",
-    "gatsby-plugin-extract-image-colors": "0.0.14",
     "gatsby-plugin-postcss": "^2.1.18",
     "gatsby-plugin-react-helmet": "^3.1.18",
     "gatsby-plugin-resolve-src": "^2.0.0",
