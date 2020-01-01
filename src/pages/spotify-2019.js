@@ -78,7 +78,7 @@ export default ({ data }) => {
             left: -11px;
             width: 15px;
             height: 100%;
-            background: #1db954;
+            background: #555;
             transform: perspective(2170px) rotateY(-63deg);
             z-index: -1;
             transition: 50ms ease-in-out opacity;
