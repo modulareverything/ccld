@@ -64,6 +64,7 @@ class Spotify2019 extends React.Component {
                   coverArt={node.image.localFile.childImageSharp.fluid}
                   playlistName={node.name}
                   spotifyLogo={data.file.childImageSharp.fluid}
+                  playlistUrl={node.external_urls.spotify}
                 />
               ))}
             </Crate>
@@ -90,7 +91,6 @@ export const query = graphql`
       edges {
         node {
           name
-          spotifyId
           external_urls {
             spotify
           }

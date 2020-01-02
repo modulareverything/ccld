@@ -12,7 +12,6 @@ class Record extends React.Component {
     this.setState({
       isRecordOpen: !isRecordOpen,
     })
-    console.log(isRecordOpen)
   }
 
   render() {
@@ -110,7 +109,13 @@ class Record extends React.Component {
         >
           <Img fluid={this.props.spotifyLogo} />
         </h3>
-        <Img fluid={this.props.coverArt} />
+        <a
+          href={this.props.playlistUrl}
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <Img fluid={this.props.coverArt} />
+        </a>
       </div>
     )
   }
