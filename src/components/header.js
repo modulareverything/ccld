@@ -66,7 +66,12 @@ const Header = props => {
               </span>
             </li>
             <li>
-              <Link to="/spotify-2019">Spotify 2019</Link>
+              <Link
+                to="/spotify-2019"
+                activeStyle={{ textDecoration: 'underline' }}
+              >
+                Spotify 2019
+              </Link>
             </li>
             <li>
               <a
