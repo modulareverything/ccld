@@ -103,6 +103,14 @@ const Header = props => {
               </Link>
             </li>
             <li>
+              <Link
+                to="/clippings"
+                activeStyle={{ textDecoration: 'underline' }}
+              >
+                Clippings
+              </Link>
+            </li>
+            <li>
               <a
                 href="https://twitter.com/__ccld"
                 rel="noopener noreferrer"
