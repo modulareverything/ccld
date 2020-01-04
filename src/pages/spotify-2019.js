@@ -1,8 +1,5 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-
-import { Helmet } from 'react-helmet'
-
 import styled from '@emotion/styled'
 import tw from 'tailwind.macro'
 import Layout from '../components/layout'
@@ -41,16 +38,9 @@ class Spotify2019 extends React.Component {
     return (
       <Layout>
         {/**
-         * Set some meta data
-         */}
-        <Helmet>
-          <title>Spotify 2019 &mdash; {siteTitle}</title>
-        </Helmet>
-
-        {/**
          * The main page header
          */}
-        <Header siteTitle={siteTitle} />
+        <Header pageTitle="Spotify 2019" />
 
         {/**
          * Here we render out the records

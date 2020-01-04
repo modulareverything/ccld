@@ -49,7 +49,12 @@ const Header = props => {
       <Container isFlex={true}>
         {/** First let's render the site name */}
         <h1>
-          <Link to="/">{props.siteTitle}</Link>
+          <Link css={tw`hover:underline`} to="/">
+            Chrish Dunne
+          </Link>
+          <span css={tw`text-gray-500`}>
+            {props.pageTitle ? ' / ' + props.pageTitle : ''}
+          </span>
         </h1>
 
         {/** Now let's create the navigation using our styled-component above */}
