@@ -13,7 +13,6 @@ class Spotify2019 extends React.Component {
      * Set a few variables to save our breath a bit
      */
     const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
 
     /**
      * Create our record crate
@@ -67,12 +66,6 @@ class Spotify2019 extends React.Component {
 
 export const query = graphql`
   query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-
     allSpotifyPlaylist(
       limit: 12
       filter: { name: { regex: "/2019/" } }
