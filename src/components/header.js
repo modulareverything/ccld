@@ -1,11 +1,27 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import Helmet from 'react-helmet'
+import { Link, useStaticQuery, graphql } from 'gatsby'
 import styled from '@emotion/styled'
 import { css } from '@emotion/core'
 import tw from 'tailwind.macro'
 import Container from '../components/container'
 
 const Header = props => {
+  /**
+   * Run the static query to get the site title
+   */
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+          }
+        }
+      }
+    `
+  )
+
   /**
    * Add some styling to the header
    */
@@ -46,6 +62,14 @@ const Header = props => {
    */
   return (
     <PageHeader>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>
+          {site.siteMetadata.title}
+          {props.pageTitle ? ' / ' + props.pageTitle : ''}
+        </title>
+      </Helmet>
+
       <Container isFlex={true}>
         {/** First let's render the site name */}
         <h1>
