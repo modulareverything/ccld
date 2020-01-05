@@ -4,7 +4,6 @@ import Layout from '../components/layout'
 import Header from '../components/header'
 import Container from '../components/container'
 import tw from 'tailwind.macro'
-import styled from '@emotion/styled'
 
 export default () => {
   return (
