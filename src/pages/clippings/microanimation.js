@@ -4,7 +4,7 @@ import Layout from '../../components/layout'
 import Container from '../../components/container'
 import tw from 'tailwind.macro'
 import FadeIn from '../../components/microanimation/fadeIn'
-import ToggleSpring from '../../components/microanimation/ToggleSpring'
+import ToggleSpring from '../../components/microanimation/toggleSpring'
 
 const Microanimation = () => {
   return (
