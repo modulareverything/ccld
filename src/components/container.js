@@ -19,7 +19,7 @@ const Container = props => {
     `}
 
     /** Is this a flex container? */
-    ${props.isFlex ? tw`flex justify-between` : ''}
+    ${props.isFlex ? tw`sm:flex sm:justify-between` : ''}
 
     /** Output our breakpoints */
     ${breakpoints.map(

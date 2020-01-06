@@ -33,7 +33,7 @@ const Header = props => {
    */
   const TopNavigation = styled.ul`
     ${tw`
-      flex flex-row
+      mt-2 sm:mt-0 flex flex-row flex-wrap
     `}
 
     & li a:hover {
@@ -41,7 +41,7 @@ const Header = props => {
     }
 
     & li {
-      ${tw`mr-1`}
+      ${tw`mr-1 p-1 pl-0 sm:p-0`}
 
       &::after {
         content: ',';
@@ -72,7 +72,7 @@ const Header = props => {
 
       <Container isFlex={true}>
         {/** First let's render the site name */}
-        <h1>
+        <h1 className="pagination">
           <Link css={tw`hover:underline`} to="/">
             Chrish Dunne
           </Link>
