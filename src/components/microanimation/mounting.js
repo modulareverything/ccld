@@ -27,7 +27,7 @@ const Mounting = () => {
           css={tw`border py-1 px-4 border-blue-800 bg-blue-600 text-white text-sm uppercase`}
           onClick={() => setToggle(!isToggled)}
         >
-          {isToggled ? 'Uno Component' : 'Unmount Component'}
+          {isToggled ? 'Unmount Component' : 'Mount Component'}
         </button>
       </div>
     </div>
