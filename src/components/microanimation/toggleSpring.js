@@ -6,7 +6,7 @@ const ToggleSpring = () => {
   const [isToggled, setToggle] = useState(false)
   const { color, x } = useSpring({
     color: isToggled ? 'tomato' : 'white',
-    x: isToggled ? 50 : 0,
+    x: isToggled ? 1 : 0,
   })
 
   return (
@@ -15,7 +15,12 @@ const ToggleSpring = () => {
       <div css={tw`bg-gray-800 p-4 text-gray-200`}>
         <animated.p
           style={{
-            transform: x.interpolate(x => `translate3d(${x}px, 0, 0)`),
+            transform: x
+              .interpolate({
+                range: [0, 0.5, 1],
+                output: [0, 100, 50],
+              })
+              .interpolate(x => `translate3d(${x}px, 0, 0)`),
             color,
           }}
         >
