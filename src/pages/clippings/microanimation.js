@@ -6,6 +6,7 @@ import tw from 'tailwind.macro'
 import FadeIn from '../../components/microanimation/fadeIn'
 import ToggleSpring from '../../components/microanimation/toggleSpring'
 import Curtains from '../../components/microanimation/curtains'
+import Mounting from '../../components/microanimation/mounting'
 
 const Microanimation = () => {
   return (
@@ -37,8 +38,11 @@ const Microanimation = () => {
             <li css={tw`mb-8`}>
               <ToggleSpring />
             </li>
-            <li>
+            <li css={tw`mb-8`}>
               <Curtains />
+            </li>
+            <li>
+              <Mounting />
             </li>
           </ul>
         </Container>
