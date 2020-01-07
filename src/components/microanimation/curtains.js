@@ -20,7 +20,7 @@ const Curtains = () => {
         ></animated.div>
         <animated.div
           style={{ transform: x.interpolate(x => `translate3d(${x}%,0,0)`) }}
-          css={tw`bg-red-700 h-32 w-6/12`}
+          css={tw`bg-red-700 h-32 w-6/12 shadow-2xl`}
         ></animated.div>
       </div>
       <button
