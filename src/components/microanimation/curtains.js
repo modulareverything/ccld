@@ -5,7 +5,7 @@ import tw from 'tailwind.macro'
 const Curtains = () => {
   const [isCurtainOpen, setCurtain] = useState(false)
   const { x } = useSpring({
-    x: isCurtainOpen ? 0 : 100,
+    x: isCurtainOpen ? 100 : 0,
   })
 
   return (
