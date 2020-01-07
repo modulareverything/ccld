@@ -26,7 +26,7 @@ const Header = props => {
    * Add some styling to the header
    */
   const PageHeader = styled.header`
-    ${tw`py-4`}
+    ${tw`py-4 mb-4`}
   `
   /**
    * Let's construct the navigation
