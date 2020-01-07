@@ -19,15 +19,6 @@ class Typography extends React.Component {
          */}
         <section>
           <Container>
-            <h1
-              css={tw`
-                text-xl
-                mt-4
-                mb-4
-              `}
-            >
-              Typography
-            </h1>
             <p
               css={tw`
                 text-sm
