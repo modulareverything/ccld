@@ -5,6 +5,7 @@ import Container from '../../components/container'
 import tw from 'tailwind.macro'
 import FadeIn from '../../components/microanimation/fadeIn'
 import ToggleSpring from '../../components/microanimation/toggleSpring'
+import Curtains from '../../components/microanimation/curtains'
 
 const Microanimation = () => {
   return (
@@ -19,12 +20,25 @@ const Microanimation = () => {
        */}
       <section>
         <Container>
+          <p
+            css={tw`
+                text-sm
+                mb-8
+              `}
+          >
+            Playing around with physics-based animation.
+          </p>
+
+          <hr css={tw`mb-8`} />
           <ul>
-            <li css={tw`mb-4`}>
+            <li css={tw`mb-8`}>
               <FadeIn />
             </li>
-            <li css={tw`mb-4`}>
+            <li css={tw`mb-8`}>
               <ToggleSpring />
+            </li>
+            <li>
+              <Curtains />
             </li>
           </ul>
         </Container>
