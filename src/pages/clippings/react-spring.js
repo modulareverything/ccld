@@ -5,13 +5,13 @@ import Container from '../../components/container'
 import tw from 'tailwind.macro'
 
 /** Import our animations */
-import FadeIn from '../../components/microanimation/FadeIn'
-import ToggleSpring from '../../components/microanimation/ToggleSpring'
-import Curtains from '../../components/microanimation/Curtains'
-import Mounting from '../../components/microanimation/Mounting'
-import Gallery from '../../components/microanimation/Gallery'
+import FadeIn from '../../components/spring/FadeIn'
+import ToggleSpring from '../../components/spring/ToggleSpring'
+import Curtains from '../../components/spring/Curtains'
+import Mounting from '../../components/spring/Mounting'
+import Gallery from '../../components/spring/Gallery'
 
-const Microanimation = () => {
+const Spring = () => {
   return (
     <Layout>
       {/**
@@ -57,4 +57,4 @@ const Microanimation = () => {
   )
 }
 
-export default Microanimation
+export default Spring
