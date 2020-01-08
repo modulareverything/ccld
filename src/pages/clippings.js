@@ -28,7 +28,7 @@ export default () => {
               <Link to="/clippings/typography">Typography</Link>
             </li>
             <li>
-              <Link to="/clippings/microanimation">Microanimation</Link>
+              <Link to="/clippings/react-spring">react-spring</Link>
             </li>
           </ul>
         </Container>
