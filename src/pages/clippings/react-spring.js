@@ -3,10 +3,13 @@ import Header from '../../components/header'
 import Layout from '../../components/layout'
 import Container from '../../components/container'
 import tw from 'tailwind.macro'
-import FadeIn from '../../components/microanimation/fadeIn'
-import ToggleSpring from '../../components/microanimation/toggleSpring'
-import Curtains from '../../components/microanimation/curtains'
-import Mounting from '../../components/microanimation/mounting'
+
+/** Import our animations */
+import FadeIn from '../../components/microanimation/FadeIn'
+import ToggleSpring from '../../components/microanimation/ToggleSpring'
+import Curtains from '../../components/microanimation/Curtains'
+import Mounting from '../../components/microanimation/Mounting'
+import Gallery from '../../components/microanimation/Gallery'
 
 const Microanimation = () => {
   return (
@@ -14,7 +17,7 @@ const Microanimation = () => {
       {/**
        * The main page header
        */}
-      <Header pageTitle="Clippings / Microanimation" />
+      <Header pageTitle="Clippings / react-spring" />
 
       {/**
        * The main content
@@ -41,8 +44,11 @@ const Microanimation = () => {
             <li css={tw`mb-8`}>
               <Curtains />
             </li>
-            <li>
+            <li css={tw`mb-8`}>
               <Mounting />
+            </li>
+            <li css={tw`mb-8`}>
+              <Gallery />
             </li>
           </ul>
         </Container>

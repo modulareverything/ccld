@@ -12,7 +12,7 @@ const Mounting = () => {
 
   return (
     <div>
-      <pre css={tw`text-sm mb-2`}>mounting.js</pre>
+      <pre css={tw`text-sm mb-2`}>Mounting.js</pre>
       <div css={tw`bg-blue-800 p-4 text-blue-200`}>
         {transition.map(
           ({ item, key, props }) =>
