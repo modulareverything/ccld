@@ -9,7 +9,6 @@ import FadeIn from '../../components/spring/FadeIn'
 import ToggleSpring from '../../components/spring/ToggleSpring'
 import Curtains from '../../components/spring/Curtains'
 import Mounting from '../../components/spring/Mounting'
-import Gallery from '../../components/spring/Gallery'
 
 const Spring = () => {
   return (
@@ -46,9 +45,6 @@ const Spring = () => {
             </li>
             <li css={tw`mb-8`}>
               <Mounting />
-            </li>
-            <li css={tw`mb-8`}>
-              <Gallery />
             </li>
           </ul>
         </Container>
