@@ -11,7 +11,6 @@ const ToggleSpring = () => {
 
   return (
     <div>
-      <pre css={tw`text-sm mb-2`}>ToggleSpring.js</pre>
       <div css={tw`bg-gray-800 p-4 text-gray-200`}>
         <animated.p
           style={{

@@ -10,7 +10,6 @@ const Curtains = () => {
 
   return (
     <div>
-      <pre css={tw`text-sm mb-2`}>Curtains.js</pre>
       <div css={tw`bg-gray-900 overflow-hidden flex flex-row`}>
         <animated.div
           style={{
