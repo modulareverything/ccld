@@ -2,10 +2,9 @@ import Typography from 'typography';
 
 const typography = new Typography({
   includeNormalize: false,
-  baseFontSize: '22px',
+  baseFontSize: '20px',
   baseLineHeight: 1.666,
   headerFontFamily: [
-    'Founders Grotesk',
     'Helvetica Neue',
     'Segoe UI',
     'Helvetica',
@@ -13,7 +12,6 @@ const typography = new Typography({
     'sans-serif',
   ],
   bodyFontFamily: [
-    'Founders Grotesk',
     'Helvetica Neue',
     'Segoe UI',
     'Helvetica',
