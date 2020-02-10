@@ -1,9 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import tw from 'tailwind.macro';
+import styled from '@emotion/styled';
 
 // ============================================================================
 
-const RichText = ({ children }) => <p>{children}</p>;
+const RichText = ({ children }) => <P>{children}</P>;
+
+// ============================================================================
+
+const P = styled.p`
+  ${tw`
+    max-w-md
+  `}
+`;
 
 // ============================================================================
 
