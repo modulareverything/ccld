@@ -34,6 +34,8 @@ const Layout = ({ children }) => {
 const StyledLayout = styled.main`
   ${tw`
     h-screen
+    pt-4
+    sm:pt-0
     sm:flex
     sm:items-center
     text-white
