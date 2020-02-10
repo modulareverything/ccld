@@ -3,7 +3,13 @@
 ============================================================================ */
 
 :root {
+  /* Brand */
   --color-white: #fff;
   --color-black: #2d3748;
   --color-brand: #ffba08;
+
+  /* Social */
+  --color-social-twitter: #1da1f2;
+  --color-social-github: #e2e2e2;
+  --color-social-dribbble: #ea4c89;
 }
