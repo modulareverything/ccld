@@ -13,8 +13,6 @@ const Container = props => {
     ${tw`
       mx-auto
       px-4
-      justify-between
-      align-middle
       w-full
     `}
     display: ${display};
@@ -22,10 +20,6 @@ const Container = props => {
       minWidth =>
         `@media(min-width: ${minWidth}px) { max-width: ${minWidth}px }`
     )}
-    
-    & > div {
-      ${tw`self-center`}
-    }
   `;
 
   return <PageContainer>{children}</PageContainer>;
