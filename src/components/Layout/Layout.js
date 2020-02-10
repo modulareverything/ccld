@@ -2,6 +2,8 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
+import tw from 'tailwind.macro';
+import styled from '@emotion/styled';
 
 // ============================================================================
 
@@ -22,10 +24,22 @@ const Layout = ({ children }) => {
       <Helmet>
         <title>{SiteTitle}</title>
       </Helmet>
-      <main>{children}</main>
+      <StyledLayout>{children}</StyledLayout>
     </>
   );
 };
+
+// ============================================================================
+
+const StyledLayout = styled.main`
+  ${tw`
+    h-screen
+    sm:flex
+    sm:items-center
+    text-white
+  `}
+  background-color: var(--color-black);
+`;
 
 // ============================================================================
 
