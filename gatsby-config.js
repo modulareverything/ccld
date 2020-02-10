@@ -26,5 +26,11 @@ module.exports = {
       resolve: `gatsby-plugin-postcss`,
       options: {},
     },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `./src/utils/typography`,
+      },
+    },
   ],
 };
