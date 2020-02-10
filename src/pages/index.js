@@ -13,12 +13,10 @@ export default () => (
     <Container>
       <Title is="Hey, I'm Chrish Dunne 👋🏻" />
       <RichText>
-        The clean-up function runs before the component is removed from the UI
-        to prevent memory leaks. Additionally, if a component renders multiple
-        times (as they typically do), the previous effect is cleaned up before
-        executing the next effect. In our example, this means a new subscription
-        is created on every update. To avoid firing an effect on every update,
-        refer to the next section.
+        I&apos;m a UI/UX Designer and front-end web developer specialising in
+        React. I currently work for Sky Betting &amp; Gaming but I&apos;m
+        setting up as a freelance contractor and will be available for work from
+        March 2020.
       </RichText>
       <Social />
     </Container>
