@@ -1,6 +1,6 @@
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
-})
+});
 
 module.exports = {
   siteMetadata: {
@@ -27,16 +27,10 @@ module.exports = {
       options: {},
     },
     {
-      resolve: `gatsby-source-spotify`,
+      resolve: `gatsby-plugin-typography`,
       options: {
-        clientId: process.env.SPOTIFY_CLIENT_ID,
-        clientSecret: process.env.SPOTIFY_CLIENT_SECRET,
-        refreshToken: process.env.SPOTIFY_REFRESH_TOKEN,
-
-        fetchPlaylists: true, // optional. Set to false to disable fetching of your playlists
-        fetchRecent: false, // optional. Set to false to disable fetching of your recently played tracks
-        timeRanges: ['short_term', 'medium_term', 'long_term'], // optional. Set time ranges to be fetched
+        pathToConfigModule: `./src/utils/typography`,
       },
     },
   ],
-}
+};
