@@ -19,15 +19,15 @@ const MouseMonitor = () => {
 };
 
 const Cursor = () => {
-  const [x, y, opacity] = MouseMonitor();
+  const [x, y, o] = MouseMonitor();
   return (
     <div
       style={{
         top: `${y - 6}px`,
         left: `${x - 6}px`,
+        opacity: `${o === 0 ? 0 : 1}`,
       }}
       css={css`
-        opacity: ${opacity === 0 ? 0 : 1};
         position: absolute;
         width: 0.5rem;
         height: 0.5rem;
