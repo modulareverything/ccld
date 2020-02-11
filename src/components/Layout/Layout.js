@@ -41,6 +41,7 @@ const StyledLayout = styled.main`
     text-white
   `}
   background-color: var(--color-black);
+  cursor: none;
 `;
 
 // ============================================================================

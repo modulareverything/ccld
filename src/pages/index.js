@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Cursor from '../components/Cursor';
 import Layout from '../components/Layout';
 import Container from '../components/Container';
 import Title from '../components/Title';
@@ -20,5 +21,6 @@ export default () => (
       </RichText>
       <Social />
     </Container>
+    <Cursor />
   </Layout>
 );

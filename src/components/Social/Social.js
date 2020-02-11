@@ -12,6 +12,7 @@ const Social = () => (
         href="https://www.twitter.com/__ccld"
         css={css`
           color: var(--color-social-twitter);
+          cursor: none;
         `}
       >
         Twitter
@@ -22,6 +23,7 @@ const Social = () => (
         href="https://www.github.com/chrish-d"
         css={css`
           color: var(--color-social-github);
+          cursor: none;
         `}
       >
         GitHub
@@ -32,6 +34,7 @@ const Social = () => (
         href="https://www.dribbble.com/_ccld"
         css={css`
           color: var(--color-social-dribbble);
+          cursor: none;
         `}
       >
         Dribbble
@@ -42,6 +45,7 @@ const Social = () => (
         href="mailto:hey@chrish.design"
         css={css`
           color: var(--color-brand);
+          cursor: none;
         `}
       >
         Email
