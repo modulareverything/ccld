@@ -23,14 +23,14 @@ const Cursor = () => {
   return (
     <div
       style={{
-        top: `${y}px`,
-        left: `${x}px`,
+        top: `${y - 6}px`,
+        left: `${x - 6}px`,
       }}
       css={css`
         opacity: ${opacity === 0 ? 0 : 1};
         position: absolute;
-        width: 1rem;
-        height: 1rem;
+        width: 0.5rem;
+        height: 0.5rem;
         border-radius: 1rem;
         background-color: var(--color-brand);
         pointer-events: none;
