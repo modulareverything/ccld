@@ -32,7 +32,7 @@ const Cursor = () => {
         width: 0.5rem;
         height: 0.5rem;
         border-radius: 1rem;
-        background-color: var(--color-brand);
+        background-color: var(--color-text);
         pointer-events: none;
         z-index: 9999;
         transition: 250ms ease opacity transform;
