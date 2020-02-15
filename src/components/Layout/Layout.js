@@ -40,7 +40,7 @@ const StyledLayout = styled.main`
     sm:items-center
     text-white
   `}
-  background-color: var(--color-black);
+  background-color: var(--color-background);
   cursor: none;
 `;
 
