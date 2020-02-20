@@ -6,6 +6,8 @@ import Container from '../components/Container';
 import Title from '../components/Title';
 import RichText from '../components/RichText';
 import Social from '../components/Social';
+import Card from '../components/Card';
+import Grid from '../components/Grid';
 
 // ============================================================================
 
@@ -19,6 +21,12 @@ export default () => (
         with a support role in many others.
       </RichText>
       <Social />
+
+      <Grid>
+        <Card />
+        <Card />
+        <Card />
+      </Grid>
     </Container>
     <Cursor />
   </Layout>

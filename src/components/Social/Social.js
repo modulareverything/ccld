@@ -44,7 +44,7 @@ const Social = () => (
       <a
         href="mailto:hey@chrish.design"
         css={css`
-          color: var(--color-white);
+          color: var(--color-text);
           cursor: none;
         `}
       >
