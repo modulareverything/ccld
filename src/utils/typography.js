@@ -5,6 +5,7 @@ const typography = new Typography({
   baseLineHeight: 1.666,
   headerWeight: 500,
   headerFontFamily: [
+    'IBM Plex Sans',
     'Helvetica Neue',
     'Segoe UI',
     'Helvetica',
@@ -13,6 +14,7 @@ const typography = new Typography({
   ],
   bodyWeight: 400,
   bodyFontFamily: [
+    'IBM Plex Sans',
     'Helvetica Neue',
     'Segoe UI',
     'Helvetica',
