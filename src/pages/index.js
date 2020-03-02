@@ -1,25 +1,20 @@
 import React from 'react';
 
-import Cursor from '../components/Cursor';
 import Layout from '../components/Layout';
 import Container from '../components/Container';
-import Title from '../components/Title';
-import RichText from '../components/RichText';
-import Social from '../components/Social';
+import BigText from '../components/BigText';
 
 // ============================================================================
 
 export default () => (
   <Layout>
     <Container>
-      <Title is="Hey, I'm Chrish Dunne 👋🏻" />
-      <RichText>
-        I&apos;m a freelance UI/UX Designer and front-end web developer. I
-        previously worked at Sky Bet, leading on their Design System project,
-        with a support role in many others.
-      </RichText>
-      <Social />
+      <BigText>
+        I&rsquo;m a freelance Designer <em>(Product, Web, UI, UX)</em> and
+        Front-end Developer
+        <em>(React, JavaScript, HTML, CSS)</em>. Working with forward-thinking
+        clients really butters my crumpet.
+      </BigText>
     </Container>
-    <Cursor />
   </Layout>
 );

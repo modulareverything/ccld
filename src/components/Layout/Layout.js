@@ -5,6 +5,8 @@ import { Helmet } from 'react-helmet';
 import tw from 'tailwind.macro';
 import styled from '@emotion/styled';
 
+import Header from '../Header';
+
 // ============================================================================
 
 const Layout = ({ children }) => {
@@ -24,7 +26,11 @@ const Layout = ({ children }) => {
       <Helmet>
         <title>{SiteTitle}</title>
       </Helmet>
-      <StyledLayout>{children}</StyledLayout>
+
+      <StyledLayout>
+        <Header />
+        {children}
+      </StyledLayout>
     </>
   );
 };
@@ -34,14 +40,10 @@ const Layout = ({ children }) => {
 const StyledLayout = styled.main`
   ${tw`
     h-screen
-    pt-4
-    sm:pt-0
-    sm:flex
-    sm:items-center
+    py-4
     text-white
   `}
   background-color: var(--color-background);
-  cursor: none;
 `;
 
 // ============================================================================
