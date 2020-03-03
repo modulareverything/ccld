@@ -13,13 +13,19 @@ const BigText = ({ children }) => {
 
 const StyledBigText = styled.h2`
   ${tw`
-    text-2xl
+    text-xl
+    sm:text-2xl
     leading-snug
     text-white
     font-semibold
     mb-16
   `}
+
   grid-column: span 9;
+
+  @media (max-width: 640px) {
+    grid-column: span 10;
+  }
 
   & em {
     ${tw`
