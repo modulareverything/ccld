@@ -9,7 +9,7 @@ const Container = props => {
   const { children } = props;
   const breakpoints = [460, 640, 768, 900];
 
-  const PageContainer = styled.div`
+  const PageContainer = styled.section`
     ${tw`
       mx-auto
       px-4
