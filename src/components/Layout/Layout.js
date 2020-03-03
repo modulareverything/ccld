@@ -40,6 +40,7 @@ const Layout = ({ children }) => {
 const StyledLayout = styled.main`
   ${tw`
     h-screen
+    overflow-auto
     py-4
     text-white
   `}
