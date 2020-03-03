@@ -7,7 +7,7 @@ import styled from '@emotion/styled';
 
 const Container = props => {
   const { children } = props;
-  const breakpoints = [640, 768, 900];
+  const breakpoints = [460, 640, 768, 900];
 
   const PageContainer = styled.div`
     ${tw`
