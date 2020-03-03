@@ -26,6 +26,7 @@ const Layout = ({ children }) => {
     <>
       <Helmet>
         <title>{SiteTitle}</title>
+        <style>{'body { background-color: var(--color-background); }'}</style>
       </Helmet>
 
       <StyledLayout>
@@ -41,8 +42,6 @@ const Layout = ({ children }) => {
 
 const StyledLayout = styled.main`
   ${tw`
-    h-screen
-    overflow-auto
     py-4
     text-white
   `}
