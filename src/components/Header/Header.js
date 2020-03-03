@@ -24,6 +24,9 @@ const Header = () => {
         <div
           css={css`
             grid-column: span 3;
+            @media (max-width: 640px) {
+              display: none;
+            }
           `}
         >
           <Heading>
