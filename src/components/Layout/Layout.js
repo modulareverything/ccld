@@ -6,6 +6,7 @@ import tw from 'tailwind.macro';
 import styled from '@emotion/styled';
 
 import Header from '../Header';
+import Footer from '../Footer';
 
 // ============================================================================
 
@@ -30,6 +31,7 @@ const Layout = ({ children }) => {
       <StyledLayout>
         <Header />
         {children}
+        <Footer />
       </StyledLayout>
     </>
   );

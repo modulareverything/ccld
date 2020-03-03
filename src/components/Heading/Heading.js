@@ -11,8 +11,6 @@ const Heading = ({ children }) => {
 // ============================================================================
 
 const StyledHeading = styled.div`
-  ${tw`mb-16`}
-
   & h2 {
     ${tw`
       mb-1

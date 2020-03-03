@@ -8,45 +8,38 @@ import Heading from '../Heading';
 
 // ============================================================================
 
-const Header = () => {
+const Footer = () => {
   return (
-    <StyledHeader>
+    <StyledFooter>
       <Container>
         <div
           css={css`
-            grid-column: span 9;
-          `}
-        >
-          <Heading primary="Chrish Dunne">
-            <h2>Chrish Dunne</h2>
-            <p>Designer/Developer</p>
-          </Heading>
-        </div>
-
-        <div
-          css={css`
-            grid-column: span 3;
-            @media (max-width: 640px) {
-              display: none;
-            }
+            grid-column: span 12;
           `}
         >
           <Heading>
-            <h2>Contact</h2>
+            <h2>&copy; {new Date().getFullYear()} Chrish Dunne</h2>
             <p>
               <a href="mailto:hey@chrish.design">hey@chrish.design</a>
             </p>
           </Heading>
         </div>
       </Container>
-    </StyledHeader>
+    </StyledFooter>
   );
 };
 
 // ============================================================================
 
-const StyledHeader = styled.header`
-  ${tw`mb-16`}
+const StyledFooter = styled.footer`
+  ${tw`
+    mt-6
+    mb-8
+    text-center
+    sm:text-left
+  `}
 `;
 
-export default Header;
+// ============================================================================
+
+export default Footer;
