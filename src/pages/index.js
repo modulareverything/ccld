@@ -3,6 +3,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Container from '../components/Container';
 import BigText from '../components/BigText';
+import Image from '../components/Image';
 
 // ============================================================================
 
@@ -14,6 +15,7 @@ export default () => (
         Front-end Developer <em>(React, JavaScript, HTML, CSS)</em>. Working
         with forward-thinking clients really butters my crumpet.
       </BigText>
+      <Image />
     </Container>
   </Layout>
 );
