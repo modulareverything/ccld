@@ -15,7 +15,7 @@ export default () => (
         Front-end Developer <em>(React, JavaScript, HTML, CSS)</em>. Working
         with forward-thinking clients really butters my crumpet.
       </BigText>
-      <Image />
+//       <Image />
     </Container>
   </Layout>
 );
